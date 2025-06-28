@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>เขียนให้วรัญอีกแร้วนาคร้าฟ</title>
+<script>
+   function checkAnniversary() {
+   const inputDate = document.getElementById("anniversary").value;
+   const correctDate = "2025-04-17";
+   
+   if(inputDate === correctDate) {
+      window.location.href = "nextpage.html";
+   } else {
+      alert("ไม่ถูกจร้าาา จำไม่ได้หรอน้องT^T");
+      }
+   }
+</script>
+</head>
+<style>
+body {background-color:rgb(209, 233, 246);}
+h2 {background-color:rgb(246, 234, 203);
+    border-radius:30px;
+    padding: 20px;
+    width: fit-content;
+    margin: 20px auto;}
+div {text-align:center;}
+button {
+    font-size: 20px;
+    padding:15px 15px;
+    border-radius: 50px;
+    background-color: #EECAD5;
+    cursor: pointer;
+    margin-top: 20px;
+    }
+input[type="date"] {
+    font-size: 18px;   /* ขนาดตัวอักษร */
+    padding: 10px;     /* เพิ่มขนาดช่อง input */
+    border-radius: 8px; /* มุมโค้งมน */
+}
+</style>
+<body>
+<h2>คบกันวันไหนน้าาา อิอิ(เดือน/วัน/ปี)&#127775;&#127775;</h2>
+<div><input type="date" id="anniversary">
+<dd><button onclick="checkAnniversary()">ถูกมั้ยว้าาา</dd></div>
+</body>
+</html>
+
